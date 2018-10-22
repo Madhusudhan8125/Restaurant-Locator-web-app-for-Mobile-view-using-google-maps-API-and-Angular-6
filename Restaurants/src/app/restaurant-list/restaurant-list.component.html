@@ -1,0 +1,16 @@
+
+<div class="row">
+<div class="col-12">
+  <div class="row col-12" *ngFor="let restaurant of restaurants.restaurants;">
+      <div (click)="restaurantDetails(restaurant)" [ngStyle]="{'background-image': 'url(' + restaurant.backgroundImageURL + ')'}" style="background-repeat: no-repeat; background-size: cover;background-position: center;">
+        <div class="footer-images image">
+          <img src='./assets/img/cellGradientBackground@2x.png' class="img-responsive">
+         </div>
+        <div class="foot" >
+          <h2>{{restaurant.name}}</h2>
+          <h4>{{restaurant.category}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
